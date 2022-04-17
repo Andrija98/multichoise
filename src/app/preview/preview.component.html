@@ -1,0 +1,10 @@
+<div class="holder">
+    <div  *ngFor="let quest of questions">
+        <p [innerHTML]="quest.question"></p>
+        <br>
+        <div class="ansvers" *ngFor="let answer of quest.answers">
+            <input type="radio" name="answers.id" value="answer"> <label for="answers.id" [innerHTML]="answer"></label>
+        </div>
+        <br><br>
+    </div>
+</div>

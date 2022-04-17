@@ -1,0 +1,38 @@
+.formHolder{
+    width: 80%;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+.formStyle{
+    margin: 35px 0;
+    width: 90%;
+}
+.answers{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px;
+    padding: 5px;
+}
+.answers > input[type=text]{
+    width: 80%;
+    border-radius: 5px;
+    margin-left: 5px;
+    border: 1px solid grey;
+    padding: 5px;
+}
+.addBtn{
+    margin: 0 auto;
+    padding: 10px;
+    width: 100%;
+}
+.btnSubmit{
+    margin: 20px;
+    padding: 15px;
+    border: none;
+    background-color: lightblue;
+}

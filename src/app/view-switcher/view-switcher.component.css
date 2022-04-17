@@ -1,0 +1,17 @@
+.holder{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 20px auto;
+    background-color: white;
+}
+
+.btn{
+    padding: 10px 10px;
+    /* border: none; */
+}
+.btn-create{
+    background-color: rgba(192, 190, 190, 0.552);
+    
+}

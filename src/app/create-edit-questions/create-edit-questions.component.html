@@ -1,0 +1,21 @@
+<div class="formHolder">
+    <form class="formStyle" [formGroup]="questionForm" (ngSubmit)="onSubmit()">
+        <div>
+            <quill-editor [modules]="config"  formControlName="question"></quill-editor>
+        </div>
+        <div  formArrayName="answers">
+            <div class="answers" *ngFor="let answers of questionForm.get('answers')['controls']; let i = index">
+                <input type="radio" name="answer" [formControlName]="i" [value]="answers.value"><quill-editor *ngIf="!checkOrRadio" [modules]="config2" [style]="editorstyle" [formControlName]="i"></quill-editor>
+                
+                <!-- <input type="radio"  [name]="i"  [formControlName]="i" [value]="answers.value"><input type="text" [value]="answers.value"> -->
+            </div>
+            <br><br>
+            <button 
+                type="button" 
+                class="addBtn"
+                (click)="onAddAnswer()">Add new choise</button>
+        </div>
+        
+        <button class="btnSubmit" type="submit">Create Question</button>
+    </form>
+</div>

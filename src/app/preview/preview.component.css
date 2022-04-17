@@ -1,0 +1,10 @@
+.holder{
+    margin: 40px;
+    padding: 20px;
+    background-color: white;
+}
+.ansvers{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~quill/dist/quill.bubble.css';
+@import '~quill/dist/quill.snow.css';
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(227, 222, 222, 0.732);
+}
